@@ -29,3 +29,17 @@
   Note: PowerShell's terminal (Get-Content) still visually displays
   the corrected files incorrectly due to console encoding settings,
   unrelated to the underlying file content, which is correct UTF-8.
+
+  ### Update — speaker attribution bug fix
+
+- Initial speaker-detection regex matched capitalized name-pairs anywhere
+  in text, not just at genuine speaker-turn boundaries, producing false
+  positives (e.g. "George Washington" misattributed as a speaker when
+  referenced rhetorically within another MP's speech; surname fragments
+  from adjacent speaker turns concatenated incorrectly).
+- Fixed by (1) anchoring the regex to line starts only (^, re.MULTILINE)
+  and (2) cross-validating every detected speaker against the authoritative
+  267-name speaker roster captured in documents_metadata.json during
+  transcript collection. Rejected 94 of ~107,682 candidate chunks as
+  unrecognised speakers, confirming the validation step catches real
+  parsing errors.

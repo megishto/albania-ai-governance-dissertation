@@ -4,209 +4,239 @@
     "speaker": "Dashnor Sula",
     "text": "Si more, një komision që do të bëjë reformën ligjore, deputetë apo persona që, patjetër, kanë njerëzit e tyre, kanë të afërmit e tyre apo janë vetë persona që hetohen nga SPAK-u?!",
     "manual_label": "negative",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.608
   },
   {
     "source_file": "cmm0ndy9o000a8h9ayvwx8dnn_Punime te_ Kuvendit_  viti 2023_ nr_ 4.txt",
     "speaker": "Lindita Nikolla",
     "text": "(Diskutime në sallë) E ke marrë katër herë fjalën për procedurë dhe, ndërkohë, ia kisha dhënë fjalën zotit Celibashi para se ta kërkonit ju.",
     "manual_label": "negative",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.581
   },
   {
     "source_file": "cmm0nl8se000g8h9ag186u8t2_Punime te_ Kuvendit_  viti 2024_ nr_ 6.txt",
     "speaker": "Enkelejd Alibeaj",
     "text": "Për sa kohë keni ndarë pazarin e qeverisjes për 4 vjetët e ardhshëm, çfarë rëndësie ka të mendosh për garancitë e votës së shqiptarëve?!",
     "manual_label": "negative",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.689
   },
   {
     "source_file": "cmm0oktkw0043pwrxi8e9u8gr_Punime te_ Kuvendit_  viti 2022_ nr_ 4.txt",
     "speaker": "Florenc Spaho",
     "text": "Në fakt, jam besimplotë që kjo agjenci ka bërë progres dhe do të dijë ta delegojë dhe ta zgjidhë këtë problematikë.",
     "manual_label": "positive",
-    "model_label": ""
+    "model_label": "positive",
+    "model_confidence": 0.648
   },
   {
     "source_file": "cmm0nbrft00078h9aatme2tw7_Punime te_ Kuvendit_  viti 2023_ nr_ 1.txt",
     "speaker": "Oerd Bylykbashi",
     "text": "Aktivisti nuk është thjesht të dish se ku e ka shtëpinë X apo Y zgjedhës, por është një platformë për kontrollin e zgjedhësve, jo platformë për kontrollin e votave.",
     "manual_label": "neutral",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.659
   },
   {
     "source_file": "cmm0nch4s00088h9airmaqp6x_Punime te_ Kuvendit_  viti 2023_ nr_ 2.txt",
     "speaker": "Emilja Koliqi",
     "text": "Në buxhetin e të gjitha viteve nuk ka asnjë projekt për Shkodrën...",
     "manual_label": "negative",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.589
   },
   {
     "source_file": "cmm0nnh9w000k8h9akxt013fj_Punime te_ Kuvendit_  viti 2024_ nr_ 10.txt",
     "speaker": "Ulsi Manja",
     "text": "(Ndërhyrje pa mikrofon) Një sekondë, ta mbaroj fjalën!",
     "manual_label": "neutral",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.454
   },
   {
     "source_file": "cmm0nch4s00088h9airmaqp6x_Punime te_ Kuvendit_  viti 2023_ nr_ 2.txt",
     "speaker": "Delina Ibrahimaj",
     "text": "Në një kohë kur sapo kanë përfunduar zgjedhjet e 14 majit dhe ne arritëm të fitojmë pjesën më të madhe të bashkive, vijojmë të paraqesim projektligje, të cilat synojnë miradministrimin e financave vendore.",
     "manual_label": "positive",
-    "model_label": ""
+    "model_label": "positive",
+    "model_confidence": 0.475
   },
   {
     "source_file": "cmm0nkgxc000f8h9awemhq0x5_Punime te_ Kuvendit_  viti 2024_ nr_ 4.txt",
     "speaker": "Enslemvera Zake",
     "text": "Në bashkëpunim me institucionet e tjera, AMF- ja ka ndihmuar në parandalimin e pastrimit të parave dhe financimit të terrorizmit.",
     "manual_label": "positive",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.496
   },
   {
     "source_file": "cmm0oktjk0040pwrxc7f58q4o_Punime te_ Kuvendit_  viti 2022_ nr_ 1.txt",
     "speaker": "Emilja Koliqi",
     "text": "Të nderuar qytetarë, Kur na u paraqit programi i qeverisë “Rama 3”, një nga shtyllat e këtij programi ishte mirëqenia për të gjithë.",
     "manual_label": "neutral",
-    "model_label": ""
+    "model_label": "positive",
+    "model_confidence": 0.666
   },
   {
     "source_file": "cmm0nch4s00088h9airmaqp6x_Punime te_ Kuvendit_  viti 2023_ nr_ 2.txt",
     "speaker": "Belinda Balluku",
     "text": "Të tjerët e bëjnë punën, kemi drejtorë, inxhinierët dhe kemi të gjithë ata që punojnë kudo në Shqipëri dhe kontribuojnë, por këtu në parlament janë ministrat dhe nuk i sjellim dot ata që t'jua thonë juve.",
     "manual_label": "positive",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.439
   },
   {
     "source_file": "cmm0nnh9w000k8h9akxt013fj_Punime te_ Kuvendit_  viti 2024_ nr_ 10.txt",
     "speaker": "Gazment Bardhi",
     "text": "Lëruani pak porosi, se kjo është bërë shumë shqetësuese.",
     "manual_label": "neutral",
-    "model_label": ""
+    "model_label": "negative",
+    "model_confidence": 0.911
   },
   {
     "source_file": "cmm0nehqd000b8h9anrg7xofa_Punime te_ Kuvendit_  viti 2023_ nr_ 5.txt",
     "speaker": "Lindita Nikolla",
     "text": "Po pyesin nga Lushnja: \"Ore, kush i mori këto subvencionet\", sepse themi se kemi bërë serra, pra shkuam nëpër serra dhe bëmë selfie nëpër serra.",
     "manual_label": "negative",
-    "model_label": ""
+    "model_label": "negative",
+    "model_confidence": 0.463
   },
   {
     "source_file": "cmm0nbrft00078h9aatme2tw7_Punime te_ Kuvendit_  viti 2023_ nr_ 1.txt",
     "speaker": "Flutura Açka",
     "text": "Nëse nuk jam, shkoj atje ku duhet të shkoj\".",
     "manual_label": "neutral",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.61
   },
   {
     "source_file": "cmm0nch4s00088h9airmaqp6x_Punime te_ Kuvendit_  viti 2023_ nr_ 2.txt",
     "speaker": "Asllan Dogjani",
     "text": "Deri tani (siç thashë, unë nuk e kam bërë denoncimin për të bërë politikë) te kjo zonjë nuk është afruar asnjë drejtues, punonjës i shërbimeve sociale të institucioneve të shtetit...",
     "manual_label": "negative",
-    "model_label": ""
+    "model_label": "negative",
+    "model_confidence": 0.482
   },
   {
     "source_file": "cmm0nm3a1000i8h9azxbkksoq_Punime te_ Kuvendit_  viti 2024_ nr_ 8.txt",
     "speaker": "Toni Gogu",
     "text": "(Ndërhyrje pa mikrofon) Në fakt, ironia është absolutisht pjesë e veglave që mund të përdoren në debatin publik, dhe nuk kam asgjë.",
     "manual_label": "neutral",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.462
   },
   {
     "source_file": "cmm0nloz7000h8h9a1j8nzpcz_Punime te_ Kuvendit_  viti 2024_ nr_ 7.txt",
     "speaker": "Niko Peleshi",
     "text": "Për fermerët shkojnë 5 milionë euro dhe 4 milionë të tjera për projekte të infrastrukturës, për ujitjen dhe kullimin.",
     "manual_label": "positive",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.65
   },
   {
     "source_file": "cmm0nch4s00088h9airmaqp6x_Punime te_ Kuvendit_  viti 2023_ nr_ 2.txt",
     "speaker": "Lindita Metaliaj",
     "text": "Pra, në një shtet ligjor, në një shtet të së drejtës, ku mbizotërojnë ligji dhe drejtësia, nuk duhet të lejohej që kryetari i një bashkie të bënte një kasaphanë të tillë.",
     "manual_label": "negative",
-    "model_label": ""
+    "model_label": "negative",
+    "model_confidence": 0.427
   },
   {
     "source_file": "cmm0ney54000c8h9a53um2u3v_Punime te_ Kuvendit_  viti 2023_ nr_ 6.txt",
     "speaker": "Tritan Shehu",
     "text": "As në rezolutën tuaj të parë dhe as në këtë, për të cilën ne ramë dakord që nuk mund të ishte, nuk ka asnjë fjalë për këto elemente dhe unë ju përshëndes sinqerisht.",
     "manual_label": "negative",
-    "model_label": ""
+    "model_label": "negative",
+    "model_confidence": 0.406
   },
   {
     "source_file": "cmm0nch4s00088h9airmaqp6x_Punime te_ Kuvendit_  viti 2023_ nr_ 2.txt",
     "speaker": "Besnik Dervishi",
     "text": "Ka një dokument shumë të mirë të Bashkimit Europian të administruar disa vite më parë, i cili mund të shërbejë si pikënisjeje për një reformim të tillë.",
     "manual_label": "neutral",
-    "model_label": ""
+    "model_label": "positive",
+    "model_confidence": 0.787
   },
   {
     "source_file": "cmm0oktjk0040pwrxc7f58q4o_Punime te_ Kuvendit_  viti 2022_ nr_ 1.txt",
     "speaker": "Lefter Gështenja",
     "text": "Në Holandë janë regjistruar shumë kompani shqiptare, dhe sikundër e dimë tashmë, ato që kanë përfituar kontrata të dyshimta qeveritare përmes PPP-ve.",
     "manual_label": "negative",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.646
   },
   {
     "source_file": "cmm0nloz7000h8h9a1j8nzpcz_Punime te_ Kuvendit_  viti 2024_ nr_ 7.txt",
     "speaker": "Elisa Spiropali",
     "text": "Koha e diskutimeve për çështje jashtë rendit të ditës nuk mund të jetë më shumë se 60 minuta.)",
     "manual_label": "neutral",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.705
   },
   {
     "source_file": "cmm0nch4s00088h9airmaqp6x_Punime te_ Kuvendit_  viti 2023_ nr_ 2.txt",
     "speaker": "Delina Ibrahimaj",
     "text": "Kategorizon 3 grupe të të ardhurave personale, të cilat realizohen nga individët dhe personat fizikë tregtarë, të cilët i nënshtrohen tatimit mbi të ardhurat personale: 1.",
     "manual_label": "neutral",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.718
   },
   {
     "source_file": "cmm0oktjk0040pwrxc7f58q4o_Punime te_ Kuvendit_  viti 2022_ nr_ 1.txt",
     "speaker": "Frida Krifca",
     "text": "Sigurisht që mjetet në dispozicion për të devijuar këtë tendencë globale janë të kufizuara.",
     "manual_label": "neutral",
-    "model_label": ""
+    "model_label": "negative",
+    "model_confidence": 0.758
   },
   {
     "source_file": "cmm0nd10l00098h9al3xix050_Punime te_ Kuvendit_  viti 2023_ nr_ 3.txt",
     "speaker": "Alfred Balla",
     "text": "Pastaj në lidhje me investimin strategjik mund t'i drejtoheni QKB-së.",
     "manual_label": "neutral",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.721
   },
   {
     "source_file": "cmm0ney54000c8h9a53um2u3v_Punime te_ Kuvendit_  viti 2023_ nr_ 6.txt",
     "speaker": "Fatmir Mediu",
     "text": "Shikoni edhe narrativën, shikoni sa shpenzon Serbia në buxhetin e mbrojtjes për qëllime tërësisht agresive!",
     "manual_label": "negative",
-    "model_label": ""
+    "model_label": "negative",
+    "model_confidence": 0.617
   },
   {
     "source_file": "cmm0oktkh0042pwrxs0lr1gal_Punime te_ Kuvendit_  viti 2022_ nr_ 3.txt",
     "speaker": "Ramadan Likaj",
     "text": "E kam thënë që në krye të herës, kur kam dalë në këtë foltore, se nuk jam personi që shaj dhe fyej kolegët, në mënyrë absolute jo, por duhet t'u shërbejmë realisht atyre qytetarëve që na kanë votuar.",
     "manual_label": "positive",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.391
   },
   {
     "source_file": "cmm0oktkh0042pwrxs0lr1gal_Punime te_ Kuvendit_  viti 2022_ nr_ 3.txt",
     "speaker": "Laert Duraj",
     "text": "Së pari, të rrisë prurjet në rezervuarin ose burimin, mirë thashë, kryesor, nëpërmjet burimit të Gurit të Bardhë, një projekt serioz prej 25 kilometrash, ku në 1,7 kilometra tunel shfrytëzohet graviteti.",
     "manual_label": "positive",
-    "model_label": ""
+    "model_label": "positive",
+    "model_confidence": 0.401
   },
   {
     "source_file": "cmm0oktjk0040pwrxc7f58q4o_Punime te_ Kuvendit_  viti 2022_ nr_ 1.txt",
     "speaker": "Emilja Koliqi",
     "text": "Një tregues se ku shkojnë paratë e shqiptarëve janë edhe investimet, të cilat po kritikohen nga të gjitha raportet e ndërkombëtarëve, Banka Botërore dhe FMN-ja.",
     "manual_label": "negative",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.627
   },
   {
     "source_file": "cmm0nch4s00088h9airmaqp6x_Punime te_ Kuvendit_  viti 2023_ nr_ 2.txt",
     "speaker": "Ermonela Felaj",
     "text": "Të përgatiten zonja Ina Zhupa dhe zoti Taulant",
     "manual_label": "neutral",
-    "model_label": ""
+    "model_label": "neutral",
+    "model_confidence": 0.532
   }
 ]
