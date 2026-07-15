@@ -15,3 +15,17 @@
 - Note: coverage has gaps (e.g. no 2022 nr. 2 or 6) — matches the "20 of
   presumably more" framing in the source article; treat as full available
   archive, not necessarily complete parliamentary record.
+
+  ### Update — text extraction
+
+- Extracted embedded OCR text layer from all 20 PDFs using pypdf
+  (src/extract_transcript_text.py). Yield: ~800K–1.9M characters per
+  transcript, all extractions status "ok".
+- Identified and corrected a Latin-1/UTF-8 double-encoding bug (mojibake)
+  in initial extraction — Albanian diacritics (ë, ç) were corrupted
+  (e.g. "tÃ«" instead of "të"). Fixed by re-encoding extracted text as
+  latin-1 then decoding as utf-8. Verified via direct Python read
+  (encoding='utf-8') — confirmed clean text with correct diacritics.
+  Note: PowerShell's terminal (Get-Content) still visually displays
+  the corrected files incorrectly due to console encoding settings,
+  unrelated to the underlying file content, which is correct UTF-8.
