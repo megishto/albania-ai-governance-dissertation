@@ -1,0 +1,20 @@
+name: albania-diss
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.11
+  - pandas
+  - numpy
+  - requests
+  - matplotlib
+  - seaborn
+  - jupyter
+  - pip
+  - pip:
+      - transformers
+      - bertopic
+      - gensim
+      - spacy
+      - nltk
+      - plotly
