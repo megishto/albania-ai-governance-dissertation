@@ -48,6 +48,10 @@ COLUMN_ALIASES = {
 }
 
 def map_columns(columns):
+    """Fuzzy-match raw column headers to a unified schema using substring
+    matching, since exact header text drifts across years/files. Takes the
+    FIRST matching column per target only, to avoid collisions when a file
+    has multiple columns matching the same alias pattern."""
     mapped = {}
     for target, aliases in COLUMN_ALIASES.items():
         for col in columns:
@@ -71,6 +75,9 @@ def extract_month_year_from_filename(filename):
     return month, year
 
 def deduplicate_columns(columns):
+    """Append a numeric suffix to duplicate column names so pandas treats
+    them as distinct labels (avoids returning a DataFrame instead of a
+    Series when selecting by a name that occurs more than once)."""
     seen = {}
     result = []
     for col in columns:
@@ -92,7 +99,7 @@ def parse_salary_file(filepath):
 
     data_start = header_idx + 1
     if is_formula_row(raw, data_start):
-        data_start += 1
+        data_start += 1  # skip the formula-annotation row
 
     headers = deduplicate_columns(raw.iloc[header_idx])
     data = raw.iloc[data_start:].copy()
@@ -122,6 +129,7 @@ def parse_salary_file(filepath):
 
     return result, "ok"
 
+
 if __name__ == "__main__":
     files = glob.glob(os.path.join(INPUT_DIR, "*.xlsx"))
     print(f"Found {len(files)} salary files to parse.")
@@ -141,6 +149,16 @@ if __name__ == "__main__":
 
     if all_results:
         unified = pd.concat(all_results, ignore_index=True)
+
+        pre_dedup_count = len(unified)
+        dedup_cols = ["mp_name_raw", "gross_pay", "net_pay", "month", "year"]
+        unified = unified.drop_duplicates(subset=dedup_cols, keep="first")
+        post_dedup_count = len(unified)
+
+        print(f"\nDeduplication: {pre_dedup_count} records -> {post_dedup_count} records "
+              f"({pre_dedup_count - post_dedup_count} exact duplicates removed, "
+              f"likely from re-uploaded source files under different document IDs)")
+
         unified.to_csv(OUTPUT_FILE, index=False, encoding="utf-8-sig")
         print(f"\nWrote {len(unified)} salary records to {OUTPUT_FILE}")
     else:
