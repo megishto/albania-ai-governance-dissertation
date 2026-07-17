@@ -1,0 +1,26 @@
+### Update — Transcript archive time coverage confirmed
+
+- Verified via full document date sort: bisedimet.parlament.al archive
+  contains 20 transcripts spanning 2022–2024 only (documentDate field is
+  year-only granularity, not precise session date). No documents exist
+  covering September 2025 onward (Diella's appointment) as of this check.
+- Keyword scan (AKSHI, kibernetik, inteligjenc, artificial) found 665 hits
+  across all 20 transcripts — substantial pre-existing discourse on
+  cybersecurity/AKSHI/AI topics predating Diella. Extracted context windows
+  for manual review (ai_keyword_contexts.txt).
+- SCOPE DECISION: Component 2 (parliamentary discourse) serves as a
+  pre-Diella baseline; Component 1 (media sentiment, GDELT/Guardian)
+  covers the actual Diella-era timeline from Sept 2025 onward. The two
+  components are complementary in time coverage rather than overlapping,
+  which strengthens the before/after narrative structure of the dissertation.
+
+### Update — Salary data collection: 2020–2021 archive gap
+
+- Verified via full document catalog metadata (62,283 documents): no
+  salary spreadsheet files exist for 2020 or 2021 in the Parliament's
+  document archive, despite full coverage for 2018-2019 and 2022-2026.
+- This is a genuine gap in the published archive, not a pipeline filtering
+  error — confirmed by searching raw catalog metadata directly for these
+  year strings before any parsing logic was applied.
+- To be noted as a data completeness limitation in the salary/parliamentary
+  dataset section of the report.
