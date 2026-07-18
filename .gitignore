@@ -217,14 +217,19 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 # Data
-data/raw/*
-!data/raw/.gitkeep
+data/raw/**
+!data/raw/**/.gitkeep
 data/processed/*.csv
 data/processed/*.parquet
 *.parquet
+
 
 # Env / secrets
 .env
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Trained model artefacts (regenerable via scripts)
+outputs/lda_model.model*
+outputs/lda_dictionary.dict
