@@ -8,19 +8,21 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 GDELT_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
 
-# Per proposal: keywords "Diella", "Albania AI", "AKSHI", "Albanian Parliament"
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+}
+
 QUERIES = [
-    "Diella Albania",
-    "Albania AI minister",
-    "AKSHI Albania",
-    "Albanian Parliament AI",
+    '"Diella"',
+    '"Albania" "artificial intelligence"',
+    '"AKSHI"',
+    '"Albanian Parliament" "AI"',
 ]
 
-# Per proposal scope: news from September 2025 onward (Diella's appointment)
 START_DATE = "20250901000000"
-END_DATE = "20260718000000"  # today, per proposal's live-collection approach
+END_DATE = "20260718000000"
 
-def fetch_gdelt(query, max_records=250):
+def fetch_gdelt(query, max_records=250, retries=3):
     params = {
         "query": query,
         "mode": "artlist",
@@ -30,9 +32,17 @@ def fetch_gdelt(query, max_records=250):
         "enddatetime": END_DATE,
         "sort": "datedesc",
     }
-    resp = requests.get(GDELT_URL, params=params, timeout=30)
-    resp.raise_for_status()
-    return resp.json()
+    last_error = None
+    for attempt in range(retries):
+        try:
+            resp = requests.get(GDELT_URL, params=params, headers=HEADERS, timeout=30)
+            resp.raise_for_status()
+            return resp.json()
+        except Exception as e:
+            last_error = e
+            print(f"    Attempt {attempt+1}/{retries} failed: {e}")
+            time.sleep(15)
+    raise last_error
 
 if __name__ == "__main__":
     all_articles = []
@@ -48,11 +58,10 @@ if __name__ == "__main__":
             all_articles.extend(articles)
         except Exception as e:
             print(f"  FAILED: {e}")
-        time.sleep(2)  # polite pacing between queries
+        time.sleep(15)  # GDELT rate limit: max 1 request per 15 seconds
 
     print(f"\nTotal articles retrieved (before dedup): {len(all_articles)}")
 
-    # Deduplicate by URL, since the same article may match multiple queries
     seen_urls = set()
     deduped = []
     for a in all_articles:
