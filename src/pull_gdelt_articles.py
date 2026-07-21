@@ -17,10 +17,15 @@ QUERIES = [
     '"Albania" "artificial intelligence"',
     '"AKSHI"',
     '"Albanian Parliament" "AI"',
+    '"AKSHI" "arrest"',
+    '"Albania" "corruption" "AI minister"',
+    '"Albania" "data breach"',
+    '"Albania" "parliament" "leak"',
 ]
 
+
 START_DATE = "20250901000000"
-END_DATE = "20260718000000"
+END_DATE = "20260721000000"
 
 def fetch_gdelt(query, max_records=250, retries=3):
     params = {

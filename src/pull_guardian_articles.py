@@ -22,10 +22,13 @@ QUERIES = [
     '"Albania" AND "artificial intelligence" AND "minister"',
     '"AKSHI"',
     '"Edi Rama" AND "AI"',
+    '"AKSHI" AND "arrest"',
+    '"Albania" AND "corruption" AND "AI"',
+    '"Albania" AND "data" AND "breach"',
 ]
 
 FROM_DATE = "2025-09-01"  # Diella's appointment, per proposal scope
-TO_DATE = "2026-07-18"    # today
+TO_DATE = "2026-07-21"    # today
 
 def fetch_guardian_page(query, page=1, page_size=50):
     params = {
